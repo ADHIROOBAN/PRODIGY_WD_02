@@ -7,14 +7,14 @@ let laps = [];
 const display = document.getElementById('display');
 const startButton = document.getElementById('start');
 const pauseButton = document.getElementById('pause');
-const resumeButton = document.getElementById('resume'); // Add this line
+const resumeButton = document.getElementById('resume'); 
 const resetButton = document.getElementById('reset');
 const lapButton = document.getElementById('lap');
 const lapsContainer = document.getElementById('laps');
 const statusImage = document.getElementById('statusImage');
 
-const staticImageSrc = 'static-image.png'; // Path to your static image
-const gifImageSrc = 'animated-image.gif'; // Path to your GIF
+const staticImageSrc = 'static-image.png'; 
+const gifImageSrc = 'animated-image.gif';
 
 function updateTime() {
     elapsedTime = Date.now() - startTime;
@@ -43,8 +43,8 @@ pauseButton.addEventListener('click', () => {
         isRunning = false;
         clearInterval(timer);
         statusImage.src = staticImageSrc;
-        pauseButton.style.display = 'none'; // Hide the pause button
-        resumeButton.style.display = 'inline-block'; // Show the resume button
+        pauseButton.style.display = 'none'; 
+        resumeButton.style.display = 'inline-block'; 
     }
 });
 
@@ -54,8 +54,8 @@ resumeButton.addEventListener('click', () => {
         startTime = Date.now() - elapsedTime;
         timer = setInterval(updateTime, 10);
         statusImage.src = gifImageSrc;
-        resumeButton.style.display = 'none'; // Hide the resume button
-        pauseButton.style.display = 'inline-block'; // Show the pause button
+        resumeButton.style.display = 'none'; 
+        pauseButton.style.display = 'inline-block';
     }
 });
 
@@ -67,8 +67,8 @@ resetButton.addEventListener('click', () => {
     laps = [];
     lapsContainer.innerHTML = '';
     statusImage.src = staticImageSrc;
-    pauseButton.style.display = 'inline-block'; // Ensure the pause button is visible
-    resumeButton.style.display = 'none'; // Hide the resume button
+    pauseButton.style.display = 'inline-block'; 
+    resumeButton.style.display = 'none'; 
 });
 
 lapButton.addEventListener('click', () => {

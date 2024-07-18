@@ -23,8 +23,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 700px; /* Set a fixed width */
-    height: 400px; /* Set a fixed height */
+    width: 700px; 
+    height: 400px; 
     overflow: hidden;
 }
 
@@ -35,9 +35,9 @@ body {
     border-radius: 15px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     position: relative;
-    width: 400px; /* Set a fixed width */
-    height: 100%; /* Ensure it fills the main container height */
-    overflow: hidden; /* Prevent the container from expanding */
+    width: 400px; 
+    height: 100%; 
+    overflow: hidden; 
 }
 
 .header {
@@ -58,13 +58,13 @@ header h1 {
     width: 57px;
     height: 57px;
     border-radius: 50%;
-    filter: brightness(1.2) contrast(1.2) saturate(1.2); /* Adjust values to increase vibrancy */
+    filter: brightness(1.2) contrast(1.2) saturate(1.2); 
     transition: filter 0.3s ease; 
     box-shadow: 0 0 10px 3px rgba(255, 255, 255, 0.5);
 }
 
 #statusImage:hover {
-    filter: brightness(5) contrast(2) saturate(5); /* Enhance effect on hover */
+    filter: brightness(5) contrast(2) saturate(5); 
 }
 
 .stopwatch {
@@ -112,7 +112,7 @@ header h1 {
     text-align: left;
     padding-left: 20px;
     border-left: 1px solid #fff;
-    font-family: 'Courier New', Courier, monospace; /* Change to Courier New */
+    font-family: 'Courier New', Courier, monospace; 
 }
 
 #laps div {
