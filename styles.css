@@ -1,0 +1,87 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(45deg, #ff6b6b, #f06595, #cc5de8, #845ef7, #5c7cfa);
+    animation: gradient 10s ease infinite;
+    background-size: 400% 400%;
+    color: #fff;
+}
+
+@keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.container {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.stopwatch {
+    margin-top: 20px;
+}
+
+#display {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    border-radius: 10px;
+    display: inline-block;
+    width: 100%;
+}
+#hooga hooga {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    border-radius: 10px;
+    display: inline-block;
+    width: 100%;
+}
+.buttons button {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    color: #fff;
+}
+
+#start { background-color: #28a745; }
+#pause { background-color: #ffc107; }
+#reset { background-color: #dc3545; }
+#lap { background-color: #007bff; }
+
+.buttons button:hover {
+    transform: scale(1.1);
+}
+
+#laps {
+    margin-top: 20px;
+    text-align: left;
+}
+
+#laps div {
+    padding: 10px;
+    border-bottom: 1px solid #fff;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    margin: 5px 0;
+}
