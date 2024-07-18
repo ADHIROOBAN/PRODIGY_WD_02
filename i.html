@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
+    <link rel="stylesheet" href="st.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="container">
+            <div class="header">
+                <h1>Stopwatch</h1>
+                <img id="statusImage" src="static-image.png" alt="Cute Image">
+            </div>
+            <div class="stopwatch">
+                <div id="display">00:00:00.00</div>
+                <div class="buttons">
+                    <button id="start">Start</button>
+                    <button id="pause">Pause</button>
+                    <button id="resume" style="display: none;">Resume</button>
+                    <button id="reset">Reset</button>
+                    <button id="lap">Lap</button>
+                </div>
+            </div>
+        </div>
+        <div id="laps" class="laps-container"></div>
+    </div>
+    <script src="sc.js"></script>
+</body>
+</html>
